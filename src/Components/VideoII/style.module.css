@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../assets/lastBLock1.jpg);
+  position: relative;
+  height: 600px;
+  background-size: cover;
+  margin-bottom: 1px;
+}
+
+.wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.videoWrapper {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  z-index: 1;
+}
